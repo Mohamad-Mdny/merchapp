@@ -1,19 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <AnchorPane prefHeight="36.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="21.0" layoutY="6.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Profile" />
-            <Button layoutX="534.0" layoutY="6.0" mnemonicParsing="false" text="Log out" />
-            <Button layoutX="130.0" layoutY="6.0" mnemonicParsing="false" text="Products" />
-            <Button layoutX="239.0" layoutY="6.0" mnemonicParsing="false" text="Cart" />
+            <Button layoutX="27.0" layoutY="8.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="64.0" text="Profile" />
+            <Button layoutX="525.0" layoutY="7.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="61.0" text="Log out" />
+            <Button layoutX="132.0" layoutY="7.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="67.0" text="Products" />
+            <Button layoutX="247.0" layoutY="7.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="42.0" text="Cart" />
          </children>
       </AnchorPane>
    </top>
+   <center>
+      <AnchorPane prefHeight="364.0" prefWidth="553.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="100.0" prefHeight="366.0" prefWidth="400.0">
+               <children>
+                  <HBox prefHeight="39.0" prefWidth="400.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label alignment="CENTER" text="Welcome back, ">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="100.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="23.0" prefWidth="59.0" text="Name">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="400.0">
+                     <children>
+                        <Label alignment="CENTER" text="Name:">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="7.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="USERNAME">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="11.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="400.0">
+                     <children>
+                        <Label alignment="CENTER" text="Email:">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="7.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="USEREMAIL">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="26.0" top="11.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="400.0">
+                     <children>
+                        <Label alignment="CENTER" text="Password:">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="7.0" />
+                           </HBox.margin>
+                        </Label>
+                        <PasswordField text="USERPASSWORD">
+                           <HBox.margin>
+                              <Insets left="20.0" top="14.0" />
+                           </HBox.margin>
+                        </PasswordField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
 </BorderPane>
