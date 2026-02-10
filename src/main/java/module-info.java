@@ -13,4 +13,6 @@ module org.example.merchapp {
 
     opens org.example.merchapp to javafx.fxml;
     exports org.example.merchapp;
+    exports backend;
+    opens backend to javafx.fxml;
 }
